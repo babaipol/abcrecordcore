@@ -1,0 +1,166 @@
+/* 
+ * ABCRecordCore Theme System
+ * Light and Dark theme variations
+ */
+
+:root {
+    /* Base Colors */
+    --color-deep-space: #0A0A0F;
+    --color-electric-purple: #8A2BE2;
+    --color-platinum: #F8F8F8;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #8A2BE2 0%, #4A00E0 100%);
+    --gradient-accent: linear-gradient(135deg, #8A2BE2 0%, #FF1493 100%);
+    
+    /* Neutral Colors */
+    --color-neutral-100: #F8F8F8;
+    --color-neutral-200: #E8E8E8;
+    --color-neutral-300: #D0D0D0;
+    --color-neutral-400: #A8A8A8;
+    --color-neutral-500: #808080;
+    --color-neutral-600: #606060;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #202020;
+    --color-neutral-900: #101010;
+    
+    /* UI Colors */
+    --color-success: #34D399;
+    --color-warning: #FBBF24;
+    --color-error: #EF4444;
+    --color-info: #60A5FA;
+    
+    /* Z-Index Layers */
+    --z-index-base: 1;
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1100;
+    --z-index-fixed: 1200;
+    --z-index-modal-backdrop: 1300;
+    --z-index-modal: 1400;
+    --z-index-popover: 1500;
+    --z-index-tooltip: 1600;
+    
+    /* Animation Speeds */
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+}
+
+/* Light Theme (Default) */
+.theme-light {
+    /* Background Colors */
+    --color-bg-primary: var(--color-platinum);
+    --color-bg-secondary: #FFFFFF;
+    --color-bg-tertiary: #F0F0F5;
+    --color-bg-accent: rgba(138, 43, 226, 0.05);
+    
+    /* Text Colors */
+    --color-text-primary: var(--color-deep-space);
+    --color-text-secondary: #333340;
+    --color-text-tertiary: #666680;
+    --color-text-accent: var(--color-electric-purple);
+    
+    /* Border Colors */
+    --color-border-light: rgba(0, 0, 0, 0.05);
+    --color-border-medium: rgba(0, 0, 0, 0.1);
+    --color-border-strong: rgba(0, 0, 0, 0.2);
+    
+    /* Button Colors */
+    --color-btn-primary-bg: var(--color-electric-purple);
+    --color-btn-primary-text: white;
+    --color-btn-primary-hover: #7B26CB;
+    --color-btn-primary-active: #6B20B2;
+    
+    --color-btn-secondary-bg: transparent;
+    --color-btn-secondary-text: var(--color-electric-purple);
+    --color-btn-secondary-border: var(--color-electric-purple);
+    --color-btn-secondary-hover: rgba(138, 43, 226, 0.05);
+    --color-btn-secondary-active: rgba(138, 43, 226, 0.1);
+    
+    /* Shadow */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    
+    /* Glass Effect */
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme */
+.theme-dark {
+    /* Background Colors */
+    --color-bg-primary: var(--color-deep-space);
+    --color-bg-secondary: #121218;
+    --color-bg-tertiary: #1A1A24;
+    --color-bg-accent: rgba(138, 43, 226, 0.15);
+    
+    /* Text Colors */
+    --color-text-primary: var(--color-platinum);
+    --color-text-secondary: #D0D0D8;
+    --color-text-tertiary: #A0A0B0;
+    --color-text-accent: var(--color-electric-purple);
+    
+    /* Border Colors */
+    --color-border-light: rgba(255, 255, 255, 0.05);
+    --color-border-medium: rgba(255, 255, 255, 0.1);
+    --color-border-strong: rgba(255, 255, 255, 0.15);
+    
+    /* Button Colors */
+    --color-btn-primary-bg: var(--color-electric-purple);
+    --color-btn-primary-text: white;
+    --color-btn-primary-hover: #9D40F5;
+    --color-btn-primary-active: #B055FF;
+    
+    --color-btn-secondary-bg: transparent;
+    --color-btn-secondary-text: var(--color-platinum);
+    --color-btn-secondary-border: var(--color-platinum);
+    --color-btn-secondary-hover: rgba(248, 248, 248, 0.05);
+    --color-btn-secondary-active: rgba(248, 248, 248, 0.1);
+    
+    /* Shadow */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    
+    /* Glass Effect */
+    --glass-bg: rgba(10, 10, 15, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Apply theme to body by default */
+body {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Theme-specific text colors */
+.text-primary {
+    color: var(--color-text-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-tertiary {
+    color: var(--color-text-tertiary);
+}
+
+.text-accent {
+    color: var(--color-text-accent);
+}
+
+/* Special gradient text effect */
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
